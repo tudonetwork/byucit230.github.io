@@ -40,6 +40,8 @@ header img {
     float: right;
 }
 
+nav ul li{float: left;}
+
 footer {
     font-size: 13px;
 	clear: both;
