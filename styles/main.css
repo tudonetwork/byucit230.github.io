@@ -39,8 +39,8 @@ header img {
     height: auto;
     float: right;
 }
-
-nav ul li{float: left;}
+nav{text-align:center}
+nav ul li{display: inline;}
 
 footer {
     font-size: 13px;
