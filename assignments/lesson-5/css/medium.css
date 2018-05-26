@@ -6,7 +6,7 @@
     width: 90%;
   }
   
-  header h1 {width: calc(100% - 200px);  margin: 30px 0px 10px 0px;}
+  header h1 {width: calc(100% - 200px); font-size:32px;   margin: 30px 0px 10px 0px;}
   header img { width:190px }
   header .subheading {width: calc(100% - 200px);}
 
