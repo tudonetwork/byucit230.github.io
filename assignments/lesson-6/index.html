@@ -1,25 +1,15 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en-us">
 <head> 
   <meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>WeatherNow BYU</title>
+  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet">
   <link rel="stylesheet" href="css/small.css">
   <link rel="stylesheet" href="css/medium.css">
   <link rel="stylesheet" href="css/large.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-  <script>
-  function ShowMenu() {
-      var x = document.getElementById("menu");
-    
-      if (x.className === "") {
-          x.className = "responsive";
-      } else {
-          x.className = "";
-      }
-  }
-  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 </head>
 <body>
 
@@ -43,7 +33,11 @@
     
   <main>
   <figure>
-  	<img src="https://images.pexels.com/photos/356977/pexels-photo-356977.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Sunny">
+   <picture>
+    <source media="(min-width: 64em)" srcset="images/large.jpeg">
+    <source media="(min-width: 37.5em)" srcset="images/medium.jpg">
+    <img src="images/small.jpg" alt="Fraklin" style="width:100%;">
+   </picture>
   </figure>
   
     <h1>Franklin</h1>
@@ -127,10 +121,11 @@
       </section>
     
      <div class="section-copyright">
-      <p>© 2018 • All rights reserved</p>
+      <p>© 2018 • All rights reserved | <span id="datefooter"></span></p>
      </div>
       
   </footer>
-
+  <script type="text/javascript" src="scripts/currentdate.js"></script>
+  <script type="text/javascript" src="scripts/hamburger.js"></script>
 </body>
 </html>
