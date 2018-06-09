@@ -51,8 +51,6 @@ background: #FFF;
 text-align: center;
 align-self: flex-end;
 }
-.gallery div:hover{ box-shadow: 3px 2px 50px 1px rgba(0, 0, 0, 0.76);
-opacity: 0.8 }
 
 nav ul {
   font-size: 16px;
