@@ -3,68 +3,132 @@
 <head> 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My Table - Ramon AndradeU</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>WeatherNow BYU</title>
+  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="css/small.css">
+  <link rel="stylesheet" href="css/medium.css">
+  <link rel="stylesheet" href="css/large.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
+<body onload="doWildChill(5, 70);">
 
   <header>
-    <div><h1>My Table - Ramon Andrade</h1></div>
+    <div><img src="images/logo.png" alt="logo"></div>
+    <div><h1>WeatherNow</h1>
+    <h2  class="subheading">Accurate 24h</h2>
+    </div>
   </header>
+
+  <nav>
+    <button onclick="ShowMenu()"><i class="fa fa-bars"></i> MENU</button>
+    <ul id="menu">
+    	<li><a href="#">Home</a></li>
+    	<li><a href="index.html" class="active">Franklin</a></li>
+    	<li><a href="#">Greenville</a></li>
+    	<li><a href="#">Springfield</a></li>
+    	<li><a href="#">Storm Center</a></li>
+    	<li><a href="gallery.html">Gallery</a></li>
+    </ul>		
+  </nav>
+    
   <main>
+  <figure style="">
+   <picture>
+    <source media="(min-width: 64em)" srcset="images/large.jpeg">
+    <source media="(min-width: 37.5em)" srcset="images/medium.jpg">
+    <img src="images/small.jpg" alt="Fraklin" style="width:100%;">
+   </picture>
+  </figure>
+  
+    <h1>Franklin</h1>
+   <div class="flex-container">
+     <section class="section-half">
+      <h2>Today's Weather</h2>  
+        <ul> 
+          <li>High: 90°</li>
+          <li>Low: 66°</li>
+          <li>Chance of Precipitation: 0%</li>
+          <li>Wind: 5mph from the South West</li>
+	  <li>Wind Chill: <span id="output-windchill"></span></li>
+        </ul>
+      </section>
+    
+      <section class="section-half">
+        <h2>Sunny</h2>
+        <img src="images/summer.jpg-500.jpg" alt="Sunny icon">
+      </section>
+   </div>
+   <div class="flex-container">
+      <section class="forecast">
+        <h2>Forecast Details</h2>
         <table>
           <tbody>
           <tr>
-          <th colspan="3"><strong>ACME Wildwest</strong></th>
+          <th colspan="10" style="text-align: center; width: 470px;"><strong>10-Day Forecast</strong></th>
           </tr>
-	  <tr>
-          <th>Period</th>
-	<th>Sales</th>
-	<th>Sales Goal</th>
-          </tr>		
           <tr>
-          <td>August</td>
-          <td>$3,590</td>
-          <td>$4,000</td>
+          <td style="text-align: center; width: 47px;">1</td>
+          <td style="text-align: center; width: 47px;">2</td>
+          <td style="text-align: center; width: 47px;">3</td>
+          <td style="text-align: center; width: 47px;">4</td>
+          <td style="text-align: center; width: 47px;">5</td>
+          <td style="text-align: center; width: 47px;">6</td>
+          <td style="text-align: center; width: 47px;">7</td>
+          <td style="text-align: center; width: 47px;">8</td>
+          <td style="text-align: center; width: 47.8281px;">9</td>
+          <td style="text-align: center; width: 46.1719px;">10</td>
           </tr>
-<tr>
-          <td>September</td>
-          <td>$4,420</td>
-          <td>$5,000</td>
+          <tr>
+          <td style="width: 47px;">89°F</td>
+          <td style="width: 47px;">87°F</td>
+          <td style="width: 47px;">78°F</td>
+          <td style="width: 47px;">75°F</td>
+          <td style="width: 47px;">72°F</td>
+          <td style="width: 47px;">72°F</td>
+          <td style="width: 47px;">79°F</td>
+          <td style="width: 47px;">83°F</td>
+          <td style="width: 47.8281px;">85°F</td>
+          <td style="width: 46.1719px;">89°F</td>
           </tr>
-<tr>
-          <td>Octuber</td>
-          <td>$4,870</td>
-          <td>$5,000</td>
-          </tr>
-<tr>
-          <td>November</td>
-          <td>$8,610</td>
-          <td>$7,500</td>
-          </tr>
-         
-	<tr>
-          <td><i>Black Friday</i></td>
-          <td colspan="2">$8,610</td>
-          </tr>
-<tr>
-          <td>December</td>
-          <td>$6,820</td>
-          <td>$7,500</td>
-          </tr>
- <tr>
-         
-          </tr>
-
           </tbody>
-<tfoot>
-    <tr>
-       <td colspan="3">Compiled 12.20.2020 by bRauls</th>
-    </tr>
-  </tfoot>
-
         </table>
+      </section>
+   </div>
+     <section class="history">
+      <h2>This day in History</h2>
+    	<div class="flex-container">
+        <img src="images/apollo10.jpg" alt="Apollo 10">
+        <p>
+        On this day in history will talk about The Apollo 10 mission that encompassed all aspects of an actual crewed lunar landing, except the landing. It was the first flight of a complete, crewed Apollo spacecraft to operate around the moon.<br>
+    Apollo 10 launched from Cape Kennedy on May 18, 1969, into a nominal 115-mile circular Earth-parking orbit at an inclination of 32.5 degrees. One-and-a-half orbits later, translunar injection occurred. The S-IVB fired to increase velocity from 25,593 to 36,651 feet per second on a free-return trajectory. Twenty-five minutes later, the CSM separated for transposition and docking with the LM, similar to the maneuver performed on Apollo 9. The orbital vehicle was comprised of the S-IVB stage, and its payload of the CSM, the LM and spacecraft-lunar module adapter, or SLA, shroud. The Apollo 10 crew members were Commander Thomas Stafford, Command Module Pilot John Young and Lunar Module Pilot Eugene Cernan.
+      </p>
+	</div>
+    </section>
   </main>
-
+    
+  <footer>
+     <div class="flex-container">
+      <section class="section-half">
+        <h3>Address</h3>
+        <p>The Weather Center</p>
+        <p>Franklin, MI 87654</p>
+        <p>123 Main Street.</p>
+      </section>
+      
+      <section class="section-half">
+        <h3>Phone</h3>
+        <p>(801) 555-1234</p>
+      <h3>Email</h3>
+      <p>contact@yoururl.com</p>
+      </section>
+    </div>
+     <div class="section-copyright">
+      <p>© 2018 • All rights reserved | <span id="datefooter"></span></p>
+     </div>
+      
+  </footer>
+  <script type="text/javascript" src="scripts/currentdate.js"></script>
+  <script type="text/javascript" src="scripts/hamburger.js"></script>
+  <script type="text/javascript" src="scripts/windchill.js"></script>
 </body>
 </html>
