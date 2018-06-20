@@ -1,0 +1,38 @@
+{
+  "titleName" : "Most Popular Feature Films",
+  "homeTown" : "Ramon Andrade",
+  "year" : 2018,
+  "active" : true,
+  "members" : [
+    {
+      "name" : "Incredibles 2",
+      "votes" :  21.270,
+      "rate" : "8.4",
+      "powers" : [
+        " Animation",
+        "Adventure",
+        "Action"
+      ]
+    },
+    {
+      "name" : "Deadpool 2",
+      "votes" : 158.674,
+      "rate" : "8.1",
+      "powers" : [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ]
+    },
+    {
+      "name" : "Avengers: Infinity War",
+      "votes" :  378.920,
+      "rate" : "8.8",
+      "powers" : [
+        "Action",
+        "Fantasy",
+        "Adventure"
+      ]
+    }
+  ]
+}
