@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html lang="en-us">
+<head data-include-html="head.html"> 
+</head>
+<body>
+  <header data-include-html="header.html">
+  </header>
+
+  <nav data-include-html="menu.html">		
+  </nav>
+
+  <main>
+  <figure style="">
+   <picture>
+    <source media="(min-width: 64em)" srcset="images/large.jpeg">
+    <source media="(min-width: 37.5em)" srcset="images/medium.jpg">
+    <img src="images/small.jpg" alt="Fraklin" style="width:100%;">
+   </picture>
+  </figure>
+  
+   <h1>Greenville</h1>
+   <div class="flex-container">
+     <section class="section-half">
+      <h2>Today's Weather</h2>  
+        <ul> 
+	<li>Current Temperature: <span id="current"></span>&deg; F</li>
+          <li>High: <span id="high"></span>&deg; F</li>
+          <li>Low: <span id="low"></span>&deg; F</li>
+          <li>Wind: <span id="wind"></span>&deg; F</li>
+	  <li>Wind Chill: <span id="output-windchill"></span></li>
+        </ul>
+      </section>
+    
+      <section class="section-half">
+        <h2 id="weather">Weather Icon</h2>
+        <img id="weatherimage" alt="Weather Icon" src="">
+      </section>
+
+   </div>
+   <div class="flex-container">
+      <section class="forecast">
+        <h2>Forecast Details</h2>
+        <table>
+          <tbody>
+          <tr>
+          <th colspan="10" style="text-align: center; width: 470px;"><strong>10-Day Forecast</strong></th>
+          </tr>
+          <tr>
+          <td style="text-align: center; width: 47px;">1</td>
+          <td style="text-align: center; width: 47px;">2</td>
+          <td style="text-align: center; width: 47px;">3</td>
+          <td style="text-align: center; width: 47px;">4</td>
+          <td style="text-align: center; width: 47px;">5</td>
+          <td style="text-align: center; width: 47px;">6</td>
+          <td style="text-align: center; width: 47px;">7</td>
+          <td style="text-align: center; width: 47px;">8</td>
+          <td style="text-align: center; width: 47.8281px;">9</td>
+          <td style="text-align: center; width: 46.1719px;">10</td>
+          </tr>
+          <tr>
+          <td style="width: 47px;">89°F</td>
+          <td style="width: 47px;">87°F</td>
+          <td style="width: 47px;">78°F</td>
+          <td style="width: 47px;">75°F</td>
+          <td style="width: 47px;">72°F</td>
+          <td style="width: 47px;">72°F</td>
+          <td style="width: 47px;">79°F</td>
+          <td style="width: 47px;">83°F</td>
+          <td style="width: 47.8281px;">85°F</td>
+          <td style="width: 46.1719px;">89°F</td>
+          </tr>
+          </tbody>
+        </table>
+      </section>
+   </div>
+     <section class="history">
+      <h2>This day in History</h2>
+    	<div class="flex-container">
+        <img src="images/apollo10.jpg" alt="Apollo 10">
+        <p>
+        On this day in history will talk about The Apollo 10 mission that encompassed all aspects of an actual crewed lunar landing, except the landing. It was the first flight of a complete, crewed Apollo spacecraft to operate around the moon.<br>
+    Apollo 10 launched from Cape Kennedy on May 18, 1969, into a nominal 115-mile circular Earth-parking orbit at an inclination of 32.5 degrees. One-and-a-half orbits later, translunar injection occurred. The S-IVB fired to increase velocity from 25,593 to 36,651 feet per second on a free-return trajectory. Twenty-five minutes later, the CSM separated for transposition and docking with the LM, similar to the maneuver performed on Apollo 9. The orbital vehicle was comprised of the S-IVB stage, and its payload of the CSM, the LM and spacecraft-lunar module adapter, or SLA, shroud. The Apollo 10 crew members were Commander Thomas Stafford, Command Module Pilot John Young and Lunar Module Pilot Eugene Cernan.
+      </p>
+      </div>
+    </section>
+  </main>
+    
+  <footer data-include-html="footer.html">
+  </footer>
+<script src="scripts/includeHtml.js"></script>
+<script src="scripts/weather.js"></script>
+<script>
+GetWeatherData(4580543);
+</script>
+<script src="scripts/currentdate.js"></script>
+<script src="scripts/hamburger.js"></script>
+<script src="scripts/windchill.js"></script>
+</body>
+</html>

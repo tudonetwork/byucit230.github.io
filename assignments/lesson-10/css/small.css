@@ -1,0 +1,175 @@
+* { box-sizing: border-box; outline:none!important}
+
+body {
+  font-size: 16px;
+  font-family: 'Merriweather Sans', sans-serif;
+  color: #01172d;
+  font-style: italic;
+background: rgba(255,255,255,1);
+background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,252,255,1) 20%, rgba(0,83,138,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(20%, rgba(255,252,255,1)), color-stop(100%, rgba(0,83,138,1)));
+background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,252,255,1) 20%, rgba(0,83,138,1) 100%);
+background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,252,255,1) 20%, rgba(0,83,138,1) 100%);
+background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,252,255,1) 20%, rgba(0,83,138,1) 100%);
+background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,252,255,1) 20%, rgba(0,83,138,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00538a', GradientType=0 );
+}
+
+header, nav, main, footer { 
+   	 max-width: 100%; 
+   	 margin: 0% 0.5%;
+    	width: 99%;
+}
+
+ section.section-half{ padding:0% 10%; width:80%}
+
+header { margin-bottom:30px!important; display: flex !important;  }
+header div h1 {  width: calc(100% - 150px);  font-size:24px; font-style: italic;  margin: 5px 0px 10px 0px;}
+header div img { margin-right:10px; width:110px }
+header div .subheading { margin:0px;  font-size:16px;  font-style: italic;}
+
+nav { background-color: #002f5f}
+nav button { width:100%; color:#FFF;border:0px; font-size: 20px;padding:5px 0px;text-align:left; background-color: #929292;}
+nav button i{margin-left:5px;color:#FFF;}
+
+.flex-container {
+
+ display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+
+}
+.responsive{display:block!important}
+
+.gallery {
+  display: grid;
+  grid-template-columns: auto;
+}
+.gallery div {
+display: flex;
+height:300px;
+background-repeat: no-repeat;
+background-size: cover;
+border:0px;
+}
+.gallery span{
+width: 100%;
+background: #000000B3;
+text-align: center;
+align-self: flex-end;
+color: #FFF;
+padding: 15px 0px;
+}
+
+.home-grid{
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+grid-gap: 30px;
+margin: 2% 4%;
+width: 92%;
+}
+.home{
+height: 300px;
+overflow: auto
+}
+.home-grid article{
+box-shadow: 1px 1px 10px #959595;
+border-radius: 3px;
+padding: 5px;
+font-size: 13px;
+text-align:center;
+}
+.home-grid article h2{
+color: #f99531;
+}
+
+.home-grid article ul{
+width: 100%;
+margin: 20px 0px;
+padding: 0px;
+}
+
+nav ul {
+  font-size: 16px;
+    display:none;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+border-radius:5px
+}
+
+nav ul li {
+    
+  width:auto;
+}
+
+nav ul li a {
+    display: block;
+    color: #FFF;
+    text-align: center;
+    padding: 2px 16px;
+    font-style: normal;
+    text-decoration: none;
+}
+
+nav ul li.active a{
+   color: #FFF;
+}
+
+nav ul li a:hover {
+    color: #FFF;
+}
+
+nav ul li:last-child a {
+   border-right:0px;
+}
+
+main { background:#FFF; border-radius:5px; padding-bottom:50px}
+main h1 {margin-top:15px; text-transform: capitalize}
+main h2 {width:100%; text-transform: capitalize}
+main figure {  margin: 0%; }
+main figure img { width:100%;}
+section.section-half img{border-radius:10px;width:250px;height:auto; }
+
+section.forecast {display:none} 
+section.forecast{width:100%;margin-top:30px; float:left}
+section.forecast table {
+    width:100%;
+    text-align:center;
+    border-collapse: collapse;
+    width: 100%;
+    font-style:normal;
+}
+section.forecast table td, main .forecast table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+section.forecast table tr {background-color: #f2f2f2;}
+section.forecast table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #929292;
+    color: #000;
+}
+
+section.history{margin-top:30px; width:100%;}
+section.history div {
+    -webkit-flex-flow: wrap;
+    flex-flow: wrap;
+}
+section.history img{ width:100%; height:auto;align-self: center;border-radius:10px; margin-bottom:5px}
+
+#stormCenter {	width:90%;min-width:250px;margin:0 auto;}
+#stormCenter input, select { margin: 15px 30px; font-size:.8em; color: #3377bb; padding: .5rem; vertical-align: middle;}
+#stormCenter label { width: 400px; text-align:right;}
+#stormCenter fieldset {margin:20px 0px; padding:0px; border:0px}
+#stormCenter textarea{width:90%;height:200px}
+#stormCenter .submit{background-color: #002f5f; color:#FFF; border:0px; border-radius:4px;font-size:22px}
+.required{color:red}
+
+footer{width:100%;margin-top:30px!important;  background:#FFF; border-radius:5px}
+footer div.section-copyright{width:100%; background-color: #002f5f; color:#FFF;padding:5px 0px;text-align:center;color:#FFF}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head data-include-html="head.html"> 
+</head>
+<body>
+  <header data-include-html="header.html">
+  </header>
+  <nav data-include-html="menu.html">		
+  </nav>
+  <main>
+ 
+   <div class="flex-container home">
+
+      <section class="home-grid">
+
+      </section>
+
+    <script>
+    var section = document.querySelector('section');
+    var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+    var request = new XMLHttpRequest();
+    request.open('GET', requestURL);
+    request.responseType = 'json';
+    request.send();
+    request.onload = function() {
+      var superweatherCity = request.response;
+      showDataWeather(superweatherCity);
+    }
+
+    function showDataWeather(jsonObj) {
+      var weatherCity = jsonObj['towns'];
+
+      for(var i = 0; i < weatherCity.length; i++) {
+
+        var myArticle = document.createElement('article');
+        var myH2 = document.createElement('h2');
+        var cityMotto = document.createElement('p');
+        var myDataP = document.createElement('p');
+        var myList = document.createElement('ul');
+
+        myH2.textContent = weatherCity[i].name;
+        cityMotto.innerHTML = '<i>"' + weatherCity[i].motto + '"</i>';
+        myData = 'Founded: ' + weatherCity[i].yearFounded + "<br>";
+        myData += 'Current Population: ' + weatherCity[i].currentPopulation + "<br>";
+	myData +=  'Rainfall: ' + weatherCity[i].averageRainfall + "<br>";
+
+        var eventCity = weatherCity[i].events;
+        for(var j = 0; j < eventCity.length; j++) {
+
+          var listItem = document.createElement('li');
+          listItem.textContent = eventCity[j];
+          myList.appendChild(listItem);
+
+        }
+	
+	// City Name
+        myArticle.appendChild(myH2);
+	
+        myArticle.appendChild(cityMotto);
+	// Information
+        myArticle.appendChild(myDataP);
+	myDataP.innerHTML = myData;
+        myArticle.appendChild(myList);
+        section.appendChild(myArticle);
+
+      }
+
+    }
+    </script>
+
+ </main>
+    
+  <footer data-include-html="footer.html">
+  </footer>
+<script src="scripts/includeHtml.js"></script>
+<script src="scripts/currentdate.js"></script>
+<script src="scripts/hamburger.js"></script>
+</body>
+</html>
