@@ -27,13 +27,13 @@ section.history div {
     padding: 10px 0px;
     width:100%;
   }
+
   nav ul li a{
        border-right: 1px solid #000;
   }
- 
   
-  nav button { display:none; } 
-  nav ul { display: flex; }
+nav button { display:none; } 
+nav ul { display: flex; }
 
 .home{
 height: 600px;

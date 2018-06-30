@@ -29,8 +29,10 @@ header div img { margin-right:10px; width:110px }
 header div .subheading { margin:0px;  font-size:16px;  font-style: italic;}
 
 nav { background-color: #002f5f}
-nav button { width:100%; color:#FFF;border:0px; font-size: 20px;padding:5px 0px;text-align:left; background-color: #929292;}
+nav button { width:100%; color:#FFF;border:0px; font-size: 20px;padding:10px 0px;text-align:left; background-color: #929292;}
 nav button i{margin-left:5px;color:#FFF;}
+
+
 
 .flex-container {
 
@@ -110,13 +112,17 @@ nav ul li a {
     display: block;
     color: #FFF;
     text-align: center;
-    padding: 2px 16px;
+    padding: 10px 16px;
     font-style: normal;
     text-decoration: none;
 }
+  nav ul li a:hover{
+	background: #0009;
+}
 
-nav ul li.active a{
-   color: #FFF;
+ .activedmenu{
+	background: #fff6;
+
 }
 
 nav ul li a:hover {
