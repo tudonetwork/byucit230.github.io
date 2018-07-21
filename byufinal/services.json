@@ -1,0 +1,54 @@
+{"services": [
+
+{"description": "Check and Tune", "price": "$30.00"},
+
+{"description": "General Service (including de-grease)", "price": "$30.00"},
+
+{"description": "Full Service", "price": "$30.00"},
+
+{"description": "Ultimate Advantage", "price": "$30.00"},
+
+{"description": "Bottom Bracket Fit (including frame preparation)", "price": "$30.00"},
+
+{"description": "Headset (including head tube inspection)", "price": "$30.00"},
+
+{"description": "Fit New Tube or Tyre", "price": "$30.00"},
+
+{"description": "Fit New Tube or Tyre (pair)", "price": "$30.00"},
+
+{"description": "Gear Adjustment (Front & rear)", "price": "$30.00"},
+
+{"description": "Gear Cable Fitting", "price": "$30.00"},
+
+{"description": "Gear Service: strip, clean, refit and set up", "price": "$30.00"},
+
+{"description": "Brake Adjustment (front & rear)", "price": "$30.00"},
+
+{"description": "Brake Service (clean brake surface and pads, refit and set up)", "price": "$30.00"},
+
+{"description": "Hydraulic Brake Bleeding (per brake)", "price": "$30.00"},
+{"description": "True Wheel", "price": "$30.00"},
+{"description": "Replace Broken Spoke", "price": "$30.00"},
+{"description": "Hub Service", "price": "$30.00"},
+{"description": "Fit New Wheel (front)", "price": "$30.00"},
+{"description": "Fit New Wheel (rear) inc. realignment of gears", "price": "$30.00"},
+
+{"description": "Wheelbuild", "price": "$30.00"},
+
+{"description": "Full Mudguard Sets", "price": "$30.00"},
+
+{"description": "Fit Computer", "price": "$30.00"},
+
+{"description": "Fit Rack", "price": "$30.00"},
+
+{"description": "Fit Grips/Bar Tape", "price": "$30.00"},
+
+{"description": "Handling Fee for Removal of Suspension unit, postage, refitting and adjustment", "price": "$30.00"},
+
+{"description": "Build up Boxed Bike", "price": "$30.00"},
+
+{"description": "Box up Bike for Transport", "price": "$30.00"},
+
+{"description": "Insurance/Crash Assessment", "price": "$30.00"}
+]
+}

@@ -1,12 +1,5 @@
 /* Medium desktop :992px. */
 @media (min-width: 1200px) and (max-width: 1500px) {
-.nivoSlider::before {
-  position: absolute;
-  right: -42px;
-  top: -122px;
-  transform: skewY(21deg);
-  width: 53%;
-}
 .slide2-text {
   margin-top: 145px;
 }
@@ -104,45 +97,11 @@
 .single-input > input {
   width: 220px;
 }    
-.contact-area .col-md-offset-1 {
-  margin: 0;
-  width: 50%;
-}    
-.offer-coupon {
-  padding: 114px 15px;
-}    
-.offer-titel > p {
-  font-size: 13px;
-}    
-.apply-coupon > button {
-  padding: 13px 16px;
-  right: 31px;
-}    
-.update-cart-btn {
-  height: 361px;
-}    
-.cart_total.cart-pdi {
-  padding: 40px 29px 70px 35px;
-}    
-.boxed-layout .page-wrapper {
-  width: 100%;
-}    
-.boxed-layout .sticky {
-  width: 100%;
-}     
-.welcome-section {
-  height: 600px;
-}      
+
 }
 
 /* Tablet desktop :768px. */
 @media (min-width: 768px) and (max-width: 991px) {
-.top-email {
-  font-size: 13px;
-}
-.search-area {
-  margin-bottom: 11px;
-}    
 .title-1 h1 {
   font-size: 42px;
   line-height: 42px;
@@ -167,16 +126,6 @@
 }    
 .single-product {
   padding: 15px;
-}     
-.all-product a {
-  margin-top: 10px;
-  font-size: 16px;
-}    
-.banner-list.owl-carousel .owl-buttons > div, .accessories-list.owl-carousel .owl-buttons > div {
-  left: -10px;
-}
-.banner-list.owl-carousel .owl-buttons .owl-next, .accessories-list.owl-carousel .owl-buttons .owl-next {
-  right: -10px;
 }     
 .accessories-area {
   background: #f7f7f7 none repeat scroll 0 0;
@@ -320,12 +269,6 @@ table.table-content {
 /* small mobile :320px. */
 @media (max-width: 767px) {
 .container {width:300px}
-.banner-list.owl-carousel .owl-buttons > div, .accessories-list.owl-carousel .owl-buttons > div {
-  left: -10px;
-}
-.banner-list.owl-carousel .owl-buttons .owl-next, .accessories-list.owl-carousel .owl-buttons .owl-next {
-  right: -10px;
-} 
 .top-bar-menu {
   display: none;
 }    
@@ -335,16 +278,6 @@ table.table-content {
 .header-meddle-right {
   float: none;
   margin-top: 25px;
-}    
-.search-area {
-  margin-bottom: 11px;
-  margin-top: 11px;
-}    
-ul.cart-area {
-  right: -45px;
-}    
-.shop-now a {
-  display: none !important;
 }    
 .title-1 h1 {
   font-size: 32px;

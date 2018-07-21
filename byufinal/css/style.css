@@ -1,63 +1,4 @@
-/*
 
-    Template Name: DotBike
-    Template URI: http://dotthemes.com/demo/dotbike-preview/
-    Author: Dot_themes
-    Author URI: http://dotthemes.com/
-    Version: 1.0
-	Description: DotBike is a modern design HTML5/CSS3 template for bicycles, bikes, 
-	mountain biking, motorcycles, accessories, spare parts online stores, bicycle store, shop, 
-	repair center and any type of eCommerce site.
-=============================
-    
-    CSS INDEX
-=============================
-	
-    1. Theme Default CSS
-   
-===============================*/
-
-
-/*========================
-    1. Default CSS
-    2. Header-top Css 
-    3. Header-midle Css 
-    4. Header bottom Css 
-    5. Navigation css here
-    6. slider-area Css 
-    7. benner-area css
-    8. new-product-area css  
-    9. accessories-area css  
-    10.footer css  
-    11. home2 css here 
-    12. sigle-banner2 css 
-    13. featured css 
-    14. breadcrumbs-area css  
-    15. shop pages css here  
-    15. shop pages css here  
-    16. Shop filter css
-    17. Shop list page css here 
-    18. pagination-box 
-    19. single-product css
-    20. single-product-tab css 
-    21. related-product-area css 
-    22. Cart-Page css 
-    23. checkout-area css 
-    24. contact css  
-    25. Mobile menu css here 
-    26. scrollUp css here 
-    27. Sticky menu css here 
-    28. 404 page css here 
-    29. All elements css here  
-    30. Accordion css
-    32. Progress bar css 
-    33. Tab css 
-    34. Box layout css here 
-    35. Home 3 css here
-    36. Home 4 css here
-    37. My account page css here
-
-=======================*/
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800');
 
 html, body {height: 100%;}
@@ -82,6 +23,7 @@ a:focus{
 a:active, a:hover {
   outline: 0 none;
 }
+.actived-menu{  color: #ff8f00!important;}
 ul{
 list-style: outside none none;
 margin: 0;
@@ -89,8 +31,7 @@ padding: 0
 }
 .clear{clear:both}
 body {
-    /*font-family: "Lato",sans-serif;*/
-  font-family: 'Raleway', sans-serif;
+ font-family: 'Raleway', sans-serif;
   font-size: 14px; 
   color: #1b222a;
   font-weight: 400;
@@ -101,59 +42,6 @@ body {
 .header-top {
   background: #008dc7 none repeat scroll 0 0;
   padding: 14px 0;
-}
-.currency, .language {
-    display: inline-block;
-}
-.currency {
-  margin-right: 10px;
-}
-.currency li a {
-    color: #fff;
-}
-.currency li a i, .language li a i {
-  margin-left: 2px;
-}
-.currency li, .language li{
-    position: relative;
-}
-.currency li ul.currency-menu, .language li ul.language-menu {
-  background: #ffffff none repeat scroll 0 0;
-  border: 1px solid #d7d7d7;
-  left: -21px;
-  position: absolute;
-  top: 120%;
-  width: 82px;
-  z-index: 1;
-  display: none;
-}
-.currency li ul.currency-menu li a:hover, .language li ul.language-menu li a:hover {
-  color: #ff8f00;
-}
-.language li ul.language-menu {
-  left: 0;
-  width: 106px;
-}
-.language-menu img {
-  margin-right: 10px;
-}
-.currency li ul.currency-menu li a, .language li ul.language-menu li a {
-  border-bottom: 1px solid #d7d7d7;
-  color: #635f60;
-  display: block;
-  padding: 4px 0;
-  text-align: center;
-  text-transform: uppercase;
-}
-.language li ul.language-menu li a {
-  text-align: left;
-  padding: 4px 6px;
-}
-.currency li ul.currency-menu li:last-child a, .language li ul.language-menu li:last-child a{
-    border: none;
-}
-.language li a {
-    color: #fff;
 }
 .top-bar-menu li {
   display: inline-block;
@@ -191,120 +79,9 @@ body {
   text-align: center;
   width: 35px;
 }
-.meni-cart, .login-account {
-  display: inline-block;
-}
-.login-account i, .cart-icon i {
-  background: #fff none repeat scroll 0 0;
-  border-radius: 100%;
-  color: #008dc7;
-  font-size: 14px;
-  height: 43px;
-  line-height: 43px;
-  margin-right: 24px;
-  text-align: center;
-  width: 43px;
-}
-.cart-icon i {
-  margin-right: 15px;
-}
-a.cart-icon {
-  color: #fff;
-  font-family: "Lato",sans-serif;
-  font-size: 18px;
-  margin-right: 17px;
-  position: relative;
-}
 .header-meddle-right {
   float: right;
   margin-top: 10px;
-}
-a.cart-icon:before {
-  content: "";
-  font-family: fontawesome;
-  position: absolute;
-  right: -16px;
-  top: 0;
-  color: #fff;
-}
-.meni-cart {
-  position: relative;
-}
-.meni-cart > span {
-  background: #ff8f00 none repeat scroll 0 0;
-  border-radius: 100%;
-  color: #ffffff;
-  font-size: 14px;
-  height: 20px;
-  left: -11px;
-  line-height: 20px;
-  position: absolute;
-  text-align: center;
-  top: 14px;
-  width: 20px;
-  pointer-events: none;
-}
-ul.cart-area {
-  background: #fff none repeat scroll 0 0;
-  border: 1px solid #d7d7d7;
-  display: none;
-  position: absolute;
-  right: 0;
-  top: 120%;
-  width: 290px;
-  z-index: 99999;
-}
-li.single-cart {
-  border-bottom: 1px solid #d7d7d7;
-  overflow: hidden;
-  padding: 16px 0 22px;
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-.meni-cart-price:hover{-webkit-transition: all 0.3s ease 0s;transition: all 0.3s ease 0s;}
-li.single-cart:hover,.meni-cart-price:hover {
-  background: #f4f4f4 none repeat scroll 0 0;
-}
-li.single-cart:last-child {
-  border-bottom:none;
-}
-.cart-img {
-  float: left;
-  text-align: center;
-  width: 50%;
-}
-.cart-content {
-  float: left;
-  width: 40%;
-}
-.cart-content > h4 {
-  margin-bottom: 8px;
-}
-.cart-content a {
-  color: #2d2d2d;
-  font-size: 14px;
-}
-.cart-content a:hover{
-  color: #ff8f00;
-}
-.cart-del {
-    float: left;
-    width: 10%;
-}
-.cart-content > p {
-  font-family: "Lato",sans-serif;
-  color: #f4a137;
-  margin-bottom: 0;
-}
-.cart-del > a {
-  color: #2d2d2d;
-  margin-left: 8px;
-}
-.cart-del > a:hover {
-  color: #ff8f00;
-}
-.meni-cart-price {
-  padding: 10px 30px;
 }
 .total {
     float: left;
@@ -368,29 +145,6 @@ li.single-cart:last-child {
   padding-bottom: 17px;
   padding-left: 0;
   padding-top: 17px;
-}
-.search-area {
-  margin-top: 11px;
-}
-.search-box-inner{
-    position: relative;
-}
-.search-box-inner input {
-  background: #ffffff none repeat scroll 0 0;
-  border: medium none;
-  border-radius: 25px;
-  font-size: 14px;
-  height: 38px;
-  padding: 0 12px;
-  width: 100%;
-}
-.search-box-inner button {
-  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-  border: medium none;
-  position: absolute;
-  right: 7px;
-  top: 10px;
-  color: #666666;
 }
 /*--------------------
    5. Navigation css here
@@ -774,6 +528,7 @@ li.single-cart:last-child {
   margin-bottom: 30px;
   padding-top: 45px;
   position: relative;
+height:620px;
 }
 .single-product-inner {
   overflow: hidden;
@@ -1696,506 +1451,18 @@ h4.related-title:before {
   position: absolute;
   width: 180px;
 }
-/*-------------------
-    22. Cart-Page css  
----------------------*/
-table > thead > tr > th {
-    padding: 15px 37px;
-    text-align: center;
-    text-transform: uppercase;
-}
 table {
     width: 100%;
-}
-.deco {
-  background: #ffffff none repeat scroll 0 0;
-  border: 1px solid #ddd;
-  display: inline-block;
-  padding: 7px 14px;
-  border-radius: 5px;
-}
-.inco {
-  background: #ffffff none repeat scroll 0 0;
-  border: 1px solid #ddd;
-  display: inline-block;
-  padding: 7px 14px;
-  position: relative;
-  border-radius: 5px;
-}
-.qtybutton {
-  cursor: pointer;
-  position: relative;
-}
-.inco.qtybutton:before {
-    content: "";
-}
-.inco.qtybutton:before, .deco.qtybutton:before {
-  background: #ffffff none repeat scroll 0 0;
-  display: inline-block;
-  font-family: FontAwesome;
-  left: 0;
-  position: absolute;
-  right: 0;
-  text-align: center;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-.deco.qtybutton:before {
-    content: "\f068 ";
 }
 table tbody tr td {
     text-align: center;
 }
 table tbody tr td {
   padding: 15px 0;
+width:50%;
+font-size:18px;
   text-align: center;
-}
-.cart-product > a {
-  background: #fff none repeat scroll 0 0;
-  border: 1px solid #ddd;
-  display: block;
-  padding: 12px 0;
-}
-.cart-name h3 {
-    font-size: 17px;
-}
-.cart-name .revew > span {
-  font-family: "Lato",sans-serif;
-}
-.cart-plus-minus-box {
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  padding: 7px;
-  text-align: center;
-  width: 41px;
-  font-family: "Lato",sans-serif;
-}
-.price-cart ,.total-cart-price{
-  font-family: "Lato",sans-serif;
-}
-.cart-name h3 a {
-  color: #1b222a;
-}
-.cart-name h3 a:hover {
-  color: #f4a137;
-}
-.cart-remove > a i:hover {
-  background: #f4a137;
-  border-color: #f4a137;
-  color: #fff;
-}
-.cart-remove a i {
-  background: #fff none repeat scroll 0 0;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  color: #000;
-  display: inline-block;
-  padding: 11px 14px;
-}
-.update-cart-btn {
-  background: #ffffff none repeat scroll 0 0;
-  border: 1px solid #dddddd;
-  display: inline-block;
-  height: 365px;
-  position: relative;
-  text-align: center;
-  width: 100%;
-}
-.update-cart-btn-inner a:hover {
-  background: #000 none repeat scroll 0 0;
-  color: #fff;
-}
-.update-cart-btn-inner {
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-    width: 100%;
-}
-.apply-coupon > input {
-  background: #ebebeb none repeat scroll 0 0;
-  border: medium none;
-  border-radius: 25px;
-  color: #060606;
-  padding: 12px 15px;
-  position: relative;
-  width: 100%;
-}
-.apply-coupon > button {
-  background: #008dc7;
-  border: medium none;
-  border-radius: 25px;
-  color: #ffffff;
-  padding: 13px 30px;
-  position: absolute;
-  right: 47px;
-  text-transform: uppercase;
-  font-weight: 600;
-}
-.apply-coupon > button:hover{
-    background: #000;
-}
-.offer-coupon {
-  background: #ffffff none repeat scroll 0 0;
-  border: 1px solid #dddddd;
-  padding: 114px 30px;
-}
-.offer-titel h4 {
-  border-bottom: 1px solid #e1e1e1;
-  color: #000000;
-  display: inline-block;
-  font-size: 16px;
-  margin-bottom: 16px;
-  padding-bottom: 10px;
-  position: relative;
-  text-transform: uppercase;
-}
-
-.offer-titel > p {
-  color: #5c5c5c;
-  margin-bottom: 24px;
-  text-transform: uppercase;
-}
-.cart_total.cart-pdi {
-  background: #fff none repeat scroll 0 0;
-  border: 1px solid #ddd;
-  padding: 34px 29px 70px 35px;
-}
-.proceed-out > a,.update-cart-btn-inner a {
-  background: #008dc7 none repeat scroll 0 0;
-  border-radius: 25px;
-  color: #ffffff;
-  display: inline-block;
-  font-size: 18px;
-  font-weight: 800;
-  height: 40px;
-  line-height: 40px;
-  margin-top: 44px;
-  padding: 0 18px;
-  font-family: "Lato",sans-serif;
-}
-.proceed-out > a:hover {
-  background: #000;
-}
-/*------------------------
-   23. checkout-area css  
-------------------------*/
-.billing-detatls-area {
-  padding-left: 30px;
-  padding-top: 36px;
-}
-.checkout-titel {
-  color: #1b222a;
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 43px;
-  padding-bottom: 7px;
-  position: relative;
-  text-transform: uppercase;
-}
-.checkout-titel:after {
-  background: #636363 none repeat scroll 0 0;
-  bottom: 0;
-  content: "";
-  height: 1px;
-  left: 0;
-  position: absolute;
-  width: 65px;
-}
-.input-text > input {
-  border: 1px solid #ededed;
-  color: #1b222a;
-  font-weight: 600;
-  height: 45px;
-  line-height: 45px;
-  margin-bottom: 30px;
-  padding: 0 14px;
-  width: 100%;
-}
-.input-field .input-text {
-    float: left;
-    width: 50%;
-}
-.billing-input {
-  overflow: hidden;
-}
-.input-field .input-text:first-child {
-    padding-right: 15px;
-}
-.input-field .input-text:last-child {
-    padding-left: 15px;
-}
-.your-order-area {
-  background: #fff none repeat scroll 0 0;
-  border: 1px solid #ededed;
-  margin-bottom: 98px;
-  margin-top: 15px;
-  padding: 23px 23px 23px 45px;
-}
-.cart_total > h4 {
-  color: #000000;
-  font-family: "Lato",sans-serif;
-  font-size: 18px;
-  font-weight: 500;
-  margin-bottom: 11px;
-  text-transform: uppercase;
-}
-.cart-inner {
-  border-bottom: 1px solid #949494;
-  border-top: 1px solid #949494;
-  padding: 22px 0;
-}
-.cart_total {
-  width: 318px;
-  font-family: "Lato",sans-serif;
-}
-.cart-inner li {
-  color: #008dc7;
-  font-family: "Lato",sans-serif;
-  font-weight: 500;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-}
-.cart-inner li:last-child {
-  margin-bottom: 0px;
-}
-.cart-inner li span {
-  float: right;
-}
-.cart_total > p {
-  color: #1b222a;
-  font-family: "Lato",sans-serif;
-  font-weight: 600;
-  margin-bottom: 0;
-  margin-top: 18px;
-  text-transform: uppercase;
-}
-.cart_total > p span {
-    float: right;
-}
-.accordion-description > img {
-  margin: 15px 0 20px;
-}
-.continue-btn > a {
-  background: #008dc7 none repeat scroll 0 0;
-  border-radius: 25px;
-  color: #fff;
-  display: inline-block;
-  float: left;
-  font-size: 18px;
-  font-weight: 800;
-  height: 40px;
-  line-height: 40px;
-  margin-right: 36px;
-  padding: 0 40px;
-  text-transform: capitalize;
-}
-.continue-btn > a:hover,.place-order > a:hover{
-  background: #000;
-}
-.shipping-different-check {
-    margin-right: 5px;
-}
-.shipping-different-check, .shipping-diffrent-text, .shipping-diffrent-text, .shipping-different{
-    display: inline-block;
-}
-.shipping-diffrent-text > p {
-  margin: 0;
-}
-.shipping-different {
-  margin-top: 10px;
-}
-.billing-submit {
-  margin-bottom: 56px;
-  overflow: hidden;
-}
-.payment-method h4 a {
-  color: #313335;
-  display: block;
-  font-size: 14px;
-  font-weight: 500;
-}
-.payment-method h4 {
-  margin-bottom: 14px;
-  position: relative;
-  padding:  0 24px;
-}
-.accordion-active > h4:after {
-  border: 2px solid #898989;
-  border-radius: 50%;
-  content: "";
-  height: 14px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 14px;
-}
-.accordion-description > p {
-  color: #313335;
-  margin-bottom: 24px;
-}
-.accordion-active > h4.open:after {
-    background: #008dc7 none repeat scroll 0 0;
-    border: medium none;
-}
-.payment-method {
-  padding: 60px 0 16px;
-}
-.payment-checkbox {
-  font-family: "Lato",sans-serif;
-  font-size: 13px;
-  margin-bottom: 40px;
-  padding-top: 11px;
-  text-transform: uppercase;
-}
-.payment-checkbox input {
-    margin-right: 8px;
-}
-.place-order > a {
-  background: #008dc7 none repeat scroll 0 0;
-  border-radius: 25px;
-  color: #fff;
-  display: inline-block;
-  font-size: 18px;
-  font-weight: 800;
-  height: 40px;
-  line-height: 40px;
-  padding: 0 28px;
-  margin-bottom: 30px;
-}
-/*--------------------
-    24. contact css  
-----------------------*/
-.contact-area {
-  background: #f7f7f7 none repeat scroll 0 0;
-  padding: 57px 0;
-}
-.contact-message > h4 {
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 26px;
-  text-transform: uppercase;
-}
-.single-input > input {
-  background: #ebebeb none repeat scroll 0 0;
-  border: medium none;
-  border-radius: 25px;
-  float: left;
-  height: 38px;
-  line-height: 38px;
-  margin-bottom: 15px;
-  margin-right: 15px;
-  padding: 0 15px;
-  text-transform: capitalize;
-  width: 270px;
-  color: #1b222a;
-}
-.single-input.input-pd input {
-  margin-right: 0;
-}
-.contact-message textarea {
-  background: #ebebeb none repeat scroll 0 0;
-  border: medium none;
-  border-radius: 25px;
-  height: 178px;
-  padding: 13px 14px;
-  width: 100%;
-  resize: none;
-}
-.service-icon {
-    float: left;
-}
-.service-cont {
-    display: inline-block;
-}
-.service-cont h5 {
-  font-size: 14px;
-  font-weight: 600;
-  margin-bottom: 15px;
-  text-transform: uppercase;
-}
-.service-icon i {
-  color: #898c90;
-  font-size: 50px;
-  margin-right: 47px;
-  margin-top: 9px;
-}
-.single-service {
-  border-bottom: 1px solid #ddd;
-  padding: 22px 0;
-}
-.single-service:last-child {
-  border: medium none;
-  padding-bottom: 0;
-}
-.ser-contct > p {
-  font-family: "Lato",sans-serif;
-}
-.service-cont > p {
-  margin-bottom: 0;
-}
-.map-area {
-  border-top: 1px solid #cccccc;
-  border-bottom: 1px solid #cccccc;
-}
-.send-button > button {
-  background: #008dc7 none repeat scroll 0 0;
-  border: medium none;
-  border-radius: 30px;
-  color: #ffffff;
-  display: inline-block;
-  font-weight: bold;
-  height: 38px;
-  line-height: 38px;
-  padding: 0 45px;
-  text-transform: uppercase;
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-.send-button {
-    margin-top: 20px;
-    text-align: right;
-}
-.send-button > button:hover {
-    background: #000000 none repeat scroll 0 0;
-}
-.form-messege.error {
-  color: red;
-  font-style: italic;
-  text-transform: capitalize;
-}
-.form-messege.success {
-  color: #6bc513;
-  font-style: italic;
-  text-transform: uppercase;
-}
-/*-------------------
-   25. Mobile menu css here 
-----------------------------*/
-.mobile-menu-area {
-  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-  margin-top: 16px;
-  position: absolute;
-  top: 100%;
-  width: 100%;
-  z-index: 9999;
-}
-.mean-container a.meanmenu-reveal {
-  color: #ffffff;
-  float: left;
-  left: 0 !important;
-  position: absolute;
-  top: -50px;
-}
-.mean-container .mean-nav ul li a.mean-expand {
-  font-family: "Lato",sans-serif;
-}
-.mobile-menu-area .mean-nav {
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-.mean-container a.meanmenu-reveal span {
-  background: #ffffff none repeat scroll 0 0;
+border-bottom:1px solid #f4f4f4
 }
 /*-------------------------
     26. scrollUp css here 
@@ -2235,201 +1502,14 @@ table tbody tr td {
   width: 100%;
   z-index: 9999999;
 }
-/*----------------------------
-   28. 404 page css here 
--------------------------*/
-.error-content h2 {
-  color: #ff8f00;
-  font-family: "Lato",sans-serif;
-  font-size: 180px;
-  font-weight: bold;
-  letter-spacing: 10px;
-  text-shadow: 7px 6px 0 #dadada, 0 -1px 0 #dadada, 1px -1px 0 #dadada, -1px 1px 0 #dadada, 1px 1px 0 #dadada;
-}
-.error-content > h3 {
-    color: #535353;
-    font-size: 55px;
-    font-weight: 500;
-    text-transform: capitalize;
-}
-.error-content h4 {
-    color: #535353;
-    font-weight: 400;
-    text-transform: capitalize;
-}
-.error-content .go-home {
-  background: #2ba8db none repeat scroll 0 0;
-  border-radius: 30px;
-  color: #ffffff;
-  display: inline-block;
-  font-weight: bold;
-  margin-top: 15px;
-  padding: 12px 28px;
-  text-transform: uppercase;
-}
-.error-content .go-home:hover {
-    background: #555 none repeat scroll 0 0;
-}
-.error-area {
-  padding: 80px 0;
-}
+
 /*-------------------
     29. All elements css here  
 ---------------------*/
 .elements {
   padding: 50px 0;
 }
-/*--------------------------
-    30. Accordion css  
----------------------------------*/
-.style2 .accordion h3 {
-  font-size: 32px;
-  font-weight: 400;
-  margin-bottom: 20px;
-  text-transform: capitalize;
-}
-.style2 .another-accordion a {
-  color: #555;
-  font-size: 14px;
-}
-.style2 .accordion.style1 .panel-title {
-  color: #2BA8DB;
-  font-weight: 500;
-}
-.another-accordion h4 {
-  background: #f1f1f1 none repeat scroll 0 0;
-  border: 1px solid #ddd;
-  border-radius: 3px;
-  color: #555;
-  font-size: 16px;
-  font-weight: 600;
-  height: 45px;
-  line-height: 45px;
-  padding-left: 10px;
-  text-transform: uppercase;
-}
-.another-accordion h4:before {
-    color: #555;
-    content: "";
-    font-family: FontAwesome;
-    font-weight: 300;
-    margin-left: 5px;
-    margin-right: 15px;
-    -webkit-transition: all 0.3s ease 0s;
-    transition: all 0.3s ease 0s;
-}
-.another-accordion h4.open:before {
-    color: #2BA8DB;
-    content: "";
-}
-.another-accordion h4:hover:before,.accordion-active h4.open {
-    color: #2BA8DB;
-}
-.another-accordion h4 a:focus {
-  color: inherit;
-}
 
-/*--------------------------
-    32. Progress bar css  
----------------------------------*/
-.our-skill .progress {
-  background-color: #f0f0f0;
-  border-radius: 0;
-  box-shadow: none;
-  height: 6px;
-  margin-bottom: 43px;
-  overflow: visible;
-  position: relative;
-}
-.our-skill .lead {
-  color: #444;
-  font-size: 13px;
-  font-weight: 700;
-  left: 0;
-  position: absolute;
-  top: -23px;
-}
-.our-skill .progress-bar {
-  background-color: #03a9f4;
-  box-shadow: none;
-}
-.our-skill .progress-bar > span:before, .our-skill .progress-bar > span:after {
-  border: medium solid transparent;
-  content: " ";
-  height: 0;
-  pointer-events: none;
-  position: absolute;
-  top: 100%;
-  width: 0;
-}
-.our-skill .progress-bar > span:before {
-  border-top-color: #333;
-  border-width: 5px;
-  left: 50%;
-  margin-left: -5px;
-}
-.our-skill .progress-bar > span {
-  background: #333 none repeat scroll 0 0;
-  float: right;
-  font-size: 11px;
-  margin-right: 10px;
-  margin-top: -26px;
-  padding: 0 5px;
-  position: relative;
-}
-.progress-style-2 .progress-bar {
-  font-size: 14px;
-  line-height: 23px;
-  padding-left: 12px;
-  text-align: left;
-  text-transform: capitalize;
-}
-.progress-style-2 .progress {
-  border-radius: 0;
-  box-shadow: none;
-  height: 23px;
-}
-
-.audio audio {
-  width: 100%;
-}
-.properties-video h5 {
-  font-size: 24px;
-  font-weight: 500;
-}
-/*--------------------------
-    33. Tab css  
----------------------------------*/
-.elements .nav-tabs > li > a {
-    color: #555;
-    font-weight: 500;
-}
-.elements .nav-tabs > li.active > a {
-  border-radius: 0;
-  border-top: 1px solid transparent;
-  color: #2BA8DB;
-}
-.elements .nav.nav-tabs {
-  border: 1px solid #ddd;
-  display: inline-block
-}
-.elements .nav-tabs > li.active:first-child > a {
-  border-left: medium none;
-}
-.elements .nav-tabs > li.active:last-child > a {
-  border-right: medium none;
-}
-.elements .elements-tab-1 .nav.nav-tabs {
-  margin-bottom: 15px;
-}
-.no-sticky p {
-  color: #555555;
-  font-weight: 500;
-  line-height: 24px;
-}
-.typhography .mt-40 {
-  margin-top: 40px;
-}
 /*--------------------
    34. Box layout css here  
 ------------------*/
@@ -2494,135 +1574,62 @@ table tbody tr td {
   margin-bottom: 40px;
 }
 
-/*--------------------
-    36. Home 4 css here
--------------*/
-.welcome-section.youtube-bg:before {
-  background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
-  content: "";
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: 1;
-  pointer-events: none;
-}
-.youtube-bg .slide1-text {
-  text-align: center;
-  position: relative;
-  z-index: 9;
-}
-.welcome-section.youtube-bg {
-    background: url(img/slider/youtube-bg.png)no-repeat scroll center center / cover;
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
 }
 
-/* ------------------------------------
-    37. My account page css here
---------------------------------------*/
-.customer-login-area {
-    margin-bottom: 50px;
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
-.my-account{
-	margin-top: 20px;
+
+input[type=submit]:hover {
+    background-color: #45a049;
 }
-.form-fields {
-    border-bottom: none;
-    border-left: 1px solid #f1f1f1;
-    border-right: 1px solid #f1f1f1;
-    border-top: 1px solid #f1f1f1;
-    float: left;
-    padding: 20px 25px;
-    width: 100%;
+
+.container-form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
 }
-.form-fields h2 {
-    border-bottom: 1px solid #f1f1f1;
-    font-size: 18px;
-    margin: 0 0 15px;
-    padding: 0 0 5px;
-    text-transform: uppercase;
-}
-.form-fields label {
-	margin: 0 0 5px;
-	color: #000000;
-	font-weight: 400;
-}
-.form-row label span.required {
-    color: red;
-    font-weight: 700;
-    border: 0;
-	line-height: 2;
-	font-size: 14px;
-}
-.form-fields input {
-    background: #f0f0f0;
-    border: 0;
-    border-radius: 0;
-    height: 36px;
-    max-width: 100%;
-    padding: 0 0 0 10px;
-    box-sizing: border-box;
-    width: 100%;
-    margin: 0;
-    outline: 0;
-    line-height: 1;
-}
-.customer-register .form-action, 
-.customer-login .form-action{
-	background: #e0e0e0;
-    border-bottom: 1px solid #f1f1f1;
-    border-left: 1px solid #f1f1f1;
-    border-right: 1px solid #f1f1f1;
-    border-top: none;
-    float: left;
-    padding: 20px 10px 16px;
-    width: 100%;
-}
-.my-account p.lost_password {
-    float: left;
-    line-height: 20px;
-    margin: 10px 0 0 0;
-}
-.my-account label.inline {
-    float: right;
-    font-weight: normal;
-    line-height: 20px;
-    margin: 10px 20px 0 0;
-}
-input#rememberme {
-    margin-right: 3px;
-    margin-top: 0;
-    position: relative;
-    top: 2px;
-}
-.my-account .actions-log {
-    float: right;
-}
-.actions-log input {
-  background: #2ba8db none repeat scroll 0 0;
-  border: 0 none;
-  border-radius: 30px;
-  color: #ffffff;
-  font-weight: bold;
-  height: 38px;
-  line-height: 38px;
-  padding: 0 38px;
-  text-transform: uppercase;
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-.actions-log input:hover{
+
+.details-box-div{
+	display: none;
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	z-index: 99999;
 	background: #000;
-	-webkit-transition: .3s;
-	transition: .3s
+	left: 0px;
+	color: #FFF;
+	height: 100%;
+	padding-top: 90px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	padding-bottom: 10px;
 }
-.lost_password > a {
-  color: #666;
+
+.close-btn-x{
+	background:red;
+	color:#FFF;
+	padding:5px;
+	 margin:5px;
+	border-radius:3px;
+	cursor:pointer;
 }
-.lost_password > a:hover{color: #2ba8db }
-.mandatory-area.account-page {
-  padding-top: 70px;
-}
-.account-page .mandatory-menu {
-  margin-bottom: 20px;
-}
+
+.banner-new-index{background-position: top center;background-size: auto;width: 100%;height: 300px;padding-top:50px}
+.banner-new-index div {width: 300px;text-align:center;margin: 0 auto;background: #FFFFFFE6;border-radius: 5px;text-align: center;padding: 40px 0px;}
+.banner-new-index div a{background: #008dc7 none repeat scroll 0 0;border-radius: 25px;color: #fff;display: inline-block;font-size: 18px;font-weight: 800;padding: 7px 37px;margin-top:20px}
